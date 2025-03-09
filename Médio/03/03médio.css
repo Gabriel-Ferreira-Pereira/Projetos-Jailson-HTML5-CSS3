@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: #010B40;
+}
+
+.container{
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container .box{
+    width: 300px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px;
+    border-radius: 5px;
+    height: 500px;
+}
+
+.box .image{
+    margin: 10px 0;
+    height: 150px;
+    width: 150px;
+    background: #03178C;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.box .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+.box .name{
+    margin: 10px 0 3px 0;
+    color: #03178C;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.box .rating{
+    font-size: 18px;
+    color: #D90D91;
+    margin-bottom: 5px;
+}
+
+.box p{
+    text-align: center;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btns{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btns button{
+    width: 100%;
+    padding: 9px 0px;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    color: #0420BF;
+    transition: all 0.3s linear;
+}
+
+.btns button:first-child{
+    background: none;
+    margin-right: 5px;
+    color: red;
+    border: 2px solid red;
+}
+
+.btns button:first-child:hover{
+    background: #bf0404;
+    color: #fff;
+}
+
+.btns button:last-child{
+    color: #000000;
+    margin-left: 5px;
+    background: #23D962;
+    border: none;
+    text-shadow: 0px 0px 2px black;
+}
+
+@media (max-width:1045px){
+    .container .box{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:710px){
+    .container .box{
+        width: 100%;
+    }
+}
