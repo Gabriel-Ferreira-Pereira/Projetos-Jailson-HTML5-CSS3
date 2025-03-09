@@ -57,7 +57,7 @@ nav .menu{
 }
 
 .img{
-    background: url(/ProjetosJailson/img/simple-website-bg-img.jpg) no-repeat;
+    background: url(simple-website-bg-img.jpg) no-repeat;
     height: 100vh;
     width: 100%;
     background-position: center;
