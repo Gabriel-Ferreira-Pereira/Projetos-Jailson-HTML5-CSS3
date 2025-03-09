@@ -10,7 +10,7 @@
 header{
     height: 100vh;
     width: 100%;
-    background: url(/ProjetosJailson/img/yunlifundo03.png) no-repeat;
+    background: url(yunlifundo03.png) no-repeat;
     background-position: center;
 }
 
@@ -121,7 +121,7 @@ nav .navbar .logo{
 .content .job .typing-text{
     color: #1de2d1;
     margin-left: 10px;
-    animation: typing 5s steps(26) infinite;
+    animation: typing 5s steps(24) infinite;
     /* background: red; */
     white-space: nowrap;
     overflow: hidden;
@@ -134,7 +134,7 @@ nav .navbar .logo{
         width: 0ch;
     }
     50%{
-        width: 26ch;
+        width: 24ch;
     }
     100%{
         width: 0ch;
